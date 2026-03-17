@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Am I the Problem?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero__sparkle hero__sparkle--one" aria-hidden="true"></div>
+      <div class="hero__sparkle hero__sparkle--two" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow">Comedy diagnosis for recreational delusion</p>
+        <h1>Am I the Problem?</h1>
+        <p class="tagline">A deeply unserious self-awareness tool.</p>
+        <p class="hero__blurb">
+          Answer six wildly incriminating questions and receive the only verdict this glittery institution has ever believed in.
+        </p>
+        <div class="hero__actions">
+          <a class="hero__cta" href="#quiz">Start the Interrogation</a>
+          <p class="hero__microcopy">Trusted by thousands of people who absolutely should have texted less.</p>
+        </div>
+      </div>
+      <aside class="hero__card" aria-label="Mock diagnostic teaser">
+        <p class="hero__card-label">Today's emotional weather</p>
+        <h2>99% chance of suspicious behavior</h2>
+        <div class="hero__pills">
+          <span>Pretty layout</span>
+          <span>Devastating outcome</span>
+          <span>No survivors</span>
+        </div>
+        <ul>
+          <li>Passive aggression: elevated</li>
+          <li>Selective memory: active</li>
+          <li>Accountability: buffering</li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <section class="quiz-section card-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <p class="section-kicker">Self-assessment lounge</p>
+          <h2 id="quiz-title">Select one answer per category</h2>
+          <p>Choose the option that most resembles your personal brand of chaos.</p>
+        </div>
+
+        <form id="quiz-form" class="quiz-form">
+          <fieldset class="question-card">
+            <legend>1. Communication Style</legend>
+            <label class="select-label" for="communication-style">Choose your signature move</label>
+            <div class="select-wrap">
+              <select id="communication-style" name="communicationStyle">
+                <option value="">Select an option</option>
+                <option value="mind_reading">I say "I'm fine" and expect mind reading</option>
+                <option value="long_paragraphs">I send long paragraphs after acting distant</option>
+                <option value="on_read">I leave people on read for character development</option>
+                <option value="nothing_something">I say "nothing" when it is definitely something</option>
+                <option value="tone_weapon">I use tone as a weapon</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>2. Conflict Style</legend>
+            <label class="select-label" for="conflict-style">Choose your signature move</label>
+            <div class="select-wrap">
+              <select id="conflict-style" name="conflictStyle">
+                <option value="">Select an option</option>
+                <option value="old_issues">I bring up old issues for context</option>
+                <option value="cry_first">I cry before the point is made</option>
+                <option value="do_what_you_want">I say "do what you want" and absolutely do not mean it</option>
+                <option value="speech_apology">I apologize with a speech</option>
+                <option value="closure_now">I need closure immediately and dramatically</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>3. Dating Behavior</legend>
+            <label class="select-label" for="dating-behavior">Choose your signature move</label>
+            <div class="select-wrap">
+              <select id="dating-behavior" name="datingBehavior">
+                <option value="">Select an option</option>
+                <option value="testing_people">I test people instead of communicating</option>
+                <option value="lose_interest">I lose interest when they like me back</option>
+                <option value="peace_boredom">I confuse peace with boredom</option>
+                <option value="spiraling_intuition">I call spiraling intuition</option>
+                <option value="stalk_first_date">I stalk before the first date</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>4. Texting Habits</legend>
+            <label class="select-label" for="texting-habits">Choose your signature move</label>
+            <div class="select-wrap">
+              <select id="texting-habits" name="textingHabits">
+                <option value="">Select an option</option>
+                <option value="investigators">I reread messages with my friends like investigators</option>
+                <option value="delay_replies">I delay replies to seem unbothered</option>
+                <option value="never_mind">I send "never mind" instead of the real issue</option>
+                <option value="post_indirectly">I post indirectly instead of saying it directly</option>
+                <option value="lol_chaos">I type "lol" during emotional chaos</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>5. Accountability Level</legend>
+            <label class="select-label" for="accountability-level">Choose your signature move</label>
+            <div class="select-wrap">
+              <select id="accountability-level" name="accountabilityLevel">
+                <option value="">Select an option</option>
+                <option value="business_days">I can admit I'm wrong in 3 to 5 business days</option>
+                <option value="understood_over_corrected">I prefer being understood over being corrected</option>
+                <option value="feedback_disrespect">I hear feedback as disrespect</option>
+                <option value="sorry_vibe">I say sorry when the vibe gets tense</option>
+                <option value="self_aware_toxic">I know I'm toxic but self-aware about it</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>6. Self-Perception</legend>
+            <label class="select-label" for="self-perception">Choose your signature move</label>
+            <div class="select-wrap">
+              <select id="self-perception" name="selfPerception">
+                <option value="">Select an option</option>
+                <option value="just_passionate">I think I'm just passionate</option>
+                <option value="everyone_dramatic">I think everyone else is dramatic</option>
+                <option value="journal_ignore_pattern">I journal but ignore the obvious pattern</option>
+                <option value="blamed_astrology">I've blamed astrology before</option>
+                <option value="thats_just_how_i_am">I say "that's just how I am"</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="quiz-actions">
+            <button id="submit-button" class="glossy-button" type="submit">Run the Analysis</button>
+            <button id="reset-top-button" class="ghost-button" type="button">Reset Choices</button>
+            <p id="quiz-status" class="quiz-status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+
+      <section id="result-section" class="result-section card-section hidden" aria-labelledby="result-title" tabindex="-1">
+        <div class="result-banner">
+          <span id="result-banner-text">Verdict loading</span>
+        </div>
+        <article class="result-card">
+          <div class="result-card__glow" aria-hidden="true"></div>
+          <div class="result-card__glint" aria-hidden="true"></div>
+          <div class="result-card__header">
+            <div class="result-card__intro">
+              <p id="result-badge" class="result-badge">Certified pattern</p>
+              <p class="result-kicker">The council reviewed the vibes and was left with concerns.</p>
+            </div>
+            <div class="meter-block">
+              <div class="meter-copy">
+                <span>Problem Probability</span>
+                <strong id="probability-score">97%</strong>
+              </div>
+              <div class="meter" aria-hidden="true">
+                <div id="meter-fill" class="meter__fill"></div>
+              </div>
+              <p class="meter-note">Clinically gorgeous. Socially suspicious.</p>
+            </div>
+          </div>
+          <h2 id="result-title">Yes. Unfortunately, it is you.</h2>
+          <p id="result-subtext" class="result-subtext">
+            Your answers arrived wearing lip gloss and plausible deniability, but the conclusion remained deeply incriminating.
+          </p>
+          <div id="metrics-grid" class="metrics-grid" aria-label="Mock diagnostic metrics"></div>
+          <button id="reset-result-button" class="glossy-button" type="button">Analyze Myself Again</button>
+        </article>
+      </section>
+
+      <section class="testimonials card-section" aria-labelledby="testimonials-title">
+        <div class="section-heading">
+          <p class="section-kicker">Testimonials</p>
+          <h2 id="testimonials-title">Independent witnesses to their own downfall</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote>
+            <p>"I wanted reassurance and got professionally humbled."</p>
+            <footer>- Nia, 26</footer>
+          </blockquote>
+          <blockquote>
+            <p>"This site clocked me so fast I had to sit down."</p>
+            <footer>- Bri, 24</footer>
+          </blockquote>
+          <blockquote>
+            <p>"It gave me evidence, not comfort."</p>
+            <footer>- Maya, 29</footer>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>This website is satire for entertainment only and should not be used as licensed emotional advice.</p>
+      <p>(c) 2026 Am I the Problem? All patterns observed.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
